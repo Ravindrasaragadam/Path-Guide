@@ -8,7 +8,7 @@
         android:id="@+id/layout_bottom_sheet1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/darker_gray"
+        android:background="#bdbdbd"
         android:elevation="@dimen/z_bottom_sheet"
         app:behavior_hideable="true"
         app:behavior_peekHeight="0dp"
@@ -23,18 +23,18 @@
             android:textSize="@dimen/text_size_medium" />
 
         <Button
+            android:id="@+id/set"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="183dp"
-            android:id="@+id/set"
             android:text="SET"
             android:textAlignment="center" />
 
         <RadioGroup
-            android:layout_width="match_parent"
             android:id="@+id/route"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_below="@+id/text_view_sheet_title1"
@@ -48,7 +48,7 @@
                 android:checked="true"
                 android:paddingEnd="10sp"
                 android:text="Quickest"
-                android:textSize="20dp" />
+                android:textSize="16dp" />
 
             <RadioButton
                 android:id="@+id/shortest"
@@ -57,7 +57,7 @@
                 android:checked="false"
                 android:paddingStart="0sp"
                 android:text="Shortest"
-                android:textSize="20dp" />
+                android:textSize="16dp" />
         </RadioGroup>
 
         <TextView
@@ -83,8 +83,8 @@
             android:id="@+id/vehicle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="150dp"
             android:layout_alignTop="@+id/textView2"
+            android:layout_marginStart="150dp"
             android:orientation="horizontal">
 
             <RadioButton
@@ -94,7 +94,7 @@
                 android:checked="true"
                 android:paddingEnd="30sp"
                 android:text="Taxi"
-                android:textSize="20dp" />
+                android:textSize="16dp" />
 
             <RadioButton
                 android:id="@+id/passenger"
@@ -103,7 +103,7 @@
                 android:checked="false"
                 android:paddingStart="0sp"
                 android:text="Passenger"
-                android:textSize="20dp" />
+                android:textSize="16dp" />
         </RadioGroup>
 
     </RelativeLayout>

@@ -29,19 +29,9 @@
             android:layout_below="@+id/text_view_sheet_title"
             android:paddingLeft="@dimen/activity_vertical_margin"
             android:paddingRight="@dimen/activity_vertical_margin"
-            android:text="Add Some Places.."
+            android:text="Add Some Places..\n\n\n"
             android:textSize="@dimen/text_size_big"
             android:textStyle="bold" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_below="@+id/text_view_more_content"
-            android:layout_marginLeft="@dimen/activity_vertical_margin"
-            android:layout_marginRight="@dimen/activity_vertical_margin"
-            android:layout_marginTop="@dimen/activity_vertical_margin"
-            android:text="ok" />
 
     </RelativeLayout>
 

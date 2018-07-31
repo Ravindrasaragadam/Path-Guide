@@ -30,6 +30,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
@@ -382,6 +383,9 @@ public class MainActivity extends FragmentActivity implements MapEventsReceiver 
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
+                InputMethodManager in = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+                in.hideSoftInputFromWindow(view.getApplicationWindowToken(), 0);
+
                 AutoSuggest selected = tempPlaces.get(i);
                 placeList.add(placenames.get(i));
                   searched.setText(null);
@@ -485,7 +489,8 @@ public class MainActivity extends FragmentActivity implements MapEventsReceiver 
        // Toast.makeText(MainActivity.this, currentLoc + "", Toast.LENGTH_LONG).show();
         if (!currentLoc .equals("donno")) {
             NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(MainActivity.this, channelId)
-                    .setSmallIcon(R.drawable.usrloc)
+                  //  .setSmallIcon(R.drawable.usrloc)
+                    .setSmallIcon(R.drawable.ic_notifications_black_24dp)
                     .setContentTitle("you're traced")
                     .setContentText(currentLoc + "");
             notificationManager.notify(notificationId, mBuilder.build());
