@@ -140,8 +140,8 @@ public class MainActivity extends FragmentActivity implements MapEventsReceiver 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        LicenceManager.getInstance().setRestAPIKey("tkt41ng662xnuqrupkitzviy81gse2rj");
-        LicenceManager.getInstance().setMapSDKKey("lwmxwe32f1193rfsoxlz5gxpgphtqkcn");
+        LicenceManager.getInstance().setRestAPIKey("MapMyIndia_RestAPI_Key");
+        LicenceManager.getInstance().setMapSDKKey("MapMyIndia_SDK_Key");
         mapMyIndiaMapView = findViewById(R.id.map);
         mMapView = mapMyIndiaMapView.getMapView();
         View mLayoutBottomSheet=findViewById(R.id.layout_bottom_sheet);
